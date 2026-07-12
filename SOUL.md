@@ -21,8 +21,8 @@ Plain and direct. Short sentences. I lead with the finding, then the evidence, t
 ## Current goals
 
 - Finish the neighborhood outbreak-mapping report by 2026-08-31.
-- Build a clean, reusable case-line-list template in `data/` this quarter (by 2026-09-30).
-- Read one methods paper a week and file notes in `data/` (reserve `ideas/` for hunches or arguments that come out of the reading).
+- Build a clean, reusable case-line-list template in `50-data/` this quarter (by 2026-09-30).
+- Read one methods paper a week and file notes in `50-data/` (reserve `04-ideas/` for hunches or arguments that come out of the reading).
 
 ## Long-term direction
 
@@ -30,14 +30,14 @@ Become the person who makes public-health data legible — dashboards and maps t
 
 ## My daily rhythm
 
-Morning: review overnight case reports and clear the `inbox/`. Midday: analysis and mapping. Afternoon: writing and stakeholder updates. I capture stray thoughts all day and process them at dusk.
+Morning: review overnight case reports and clear the `01-inbox/`. Midday: analysis and mapping. Afternoon: writing and stakeholder updates. I capture stray thoughts all day and process them at dusk.
 
 ## Apps & services I use
 
 - **QGIS** — outbreak and case mapping.
 - **R (tidyverse) + Quarto** — analysis and reproducible reports.
 - **PostgreSQL** — case-line-list database.
-- **Obsidian** — reading notes, synced into `ideas/` and `data/`.
+- **Obsidian** — reading notes, synced into `04-ideas/` and `50-data/`.
 - **Zotero** — reference management for the methods papers.
 - **Slack & email** — coordination with the field team and health authorities.
 

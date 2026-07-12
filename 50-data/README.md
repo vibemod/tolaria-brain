@@ -1,4 +1,4 @@
-# data/
+# 50-data/
 
 Structured files and reference material.
 

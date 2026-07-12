@@ -9,11 +9,11 @@ A regular sweep to keep the brain trustworthy. Report findings; make changes onl
 
 ## Steps
 
-1. **Inbox** — is `inbox/` empty? If not, offer to run `process-inbox`.
-2. **Projects** — for each item in `projects/`, check the header (from `projects/README.md`):
+1. **Inbox** — is `01-inbox/` empty? If not, offer to run `process-inbox`.
+2. **Projects** — for each item in `02-projects/`, check the header (from `02-projects/README.md`):
    - Missing **Goal**, **Deadline**, **Status**, or **Next action**? List it.
    - **Status: stalled** or past deadline? Flag it and suggest either a next action, a new deadline, or archiving.
-   - Finished? Propose moving to `archive/` prefixed `YYYY-MM-`.
+   - Finished? Propose moving to `60-archive/` prefixed `YYYY-MM-`.
 3. **Areas** — any area with no recent notes or an unclear standard? Note it. Areas don't get "done", but they can go stale.
 4. **Ideas** — surface 3–5 ideas worth revisiting or promoting to a project.
 5. **Archive hygiene** — confirm archived items keep their `YYYY-MM-` prefix; nothing active left behind.
@@ -22,4 +22,4 @@ A regular sweep to keep the brain trustworthy. Report findings; make changes onl
 
 - Produce a short report: inbox status, projects needing action, stale areas, ideas to revisit.
 - Make moves/edits only after the user confirms.
-- Offer to commit the result with `git-save`.
+- Offer to commit the result with `git`.

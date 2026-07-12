@@ -1,4 +1,4 @@
-# archive/
+# 60-archive/
 
 Cold storage. Finished projects and stale ideas go here so the active folders stay clean.
 

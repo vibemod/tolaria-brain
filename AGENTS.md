@@ -10,12 +10,13 @@ A plain-markdown personal knowledge base. Files are the database. Prefer editing
 
 | Folder | Holds | Test |
 |---|---|---|
-| `inbox/` | Unprocessed captures | Default landing spot |
-| `projects/` | Active efforts | Has a finish line |
-| `areas/` | Ongoing responsibilities | Never ends |
-| `ideas/` | My original thinking | My own spark |
-| `data/` | Structured files + reference material | A file or something I read |
-| `archive/` | Done / stale | Finished or abandoned |
+| `01-inbox/` | Unprocessed captures | Default landing spot |
+| `02-projects/` | Active efforts | Has a finish line |
+| `03-areas/` | Ongoing responsibilities | Never ends |
+| `04-ideas/` | My original thinking | My own spark |
+| `05-people/` | Notes on people | It's about a person |
+| `50-data/` | Structured files + reference material | A file or something I read |
+| `60-archive/` | Done / stale | Finished or abandoned |
 
 This table is the canonical filing rule. Other READMEs may summarize it; when they disagree, this file wins.
 
@@ -23,7 +24,7 @@ This table is the canonical filing rule. Other READMEs may summarize it; when th
 
 ## Processing the inbox
 
-When asked to process `inbox/`:
+When asked to process `01-inbox/`:
 
 1. Read each item.
 2. Decide its destination using the table above.
@@ -35,8 +36,8 @@ When asked to process `inbox/`:
 
 - Filenames: lowercase, kebab-case, descriptive (`q3-budget-notes.md`, not `notes2.md`).
 - Inbox captures: prefix with the capture date — `YYYY-MM-DD-slug.md` — so unprocessed items age visibly. Drop the prefix when filing (unless the date matters).
-- Archived items: prefix with year-month of archiving — `archive/2026-07-outbreak-report/` — so names never collide and context is preserved.
-- New projects: start from the template in `projects/README.md` (goal, deadline, status, next action).
+- Archived items: prefix with year-month of archiving — `60-archive/2026-07-outbreak-report/` — so names never collide and context is preserved.
+- New projects: start from the template in `02-projects/README.md` (goal, deadline, status, next action).
 - Dates: absolute (`2026-07-11`), never "yesterday".
 - One topic per file. Link between notes with relative markdown links.
 - Keep edits small and reviewable. Summarize what changed.

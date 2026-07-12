@@ -1,9 +1,9 @@
 ---
-name: git-save
+name: git
 description: Snapshot the tolaria-brain with git — stage changes, write a clear commit message listing what moved/changed/was deleted, commit, and push if a remote exists. Use when the user says "save", "commit", "snapshot", "back this up", "git save", or after processing the inbox or editing notes.
 ---
 
-# git-save
+# git
 
 Commit the current state of the brain. Git history is the audit log, so the message must say what actually changed.
 
@@ -17,10 +17,10 @@ Commit the current state of the brain. Git history is the audit log, so the mess
    ```
    Process inbox: file 3 notes, archive outbreak report
 
-   - moved inbox/well-map.md → data/well-map.md
-   - moved inbox/2026-07-10-10k-plan.md → projects/run-a-10k.md
-   - archived projects/outbreak-report → archive/2026-07-outbreak-report/
-   - deleted inbox/blank.md (empty)
+   - moved 01-inbox/well-map.md → 50-data/well-map.md
+   - moved 01-inbox/2026-07-10-10k-plan.md → 02-projects/run-a-10k.md
+   - archived 02-projects/outbreak-report → 60-archive/2026-07-outbreak-report/
+   - deleted 01-inbox/blank.md (empty)
    ```
 
    Use a concise imperative subject line; put the itemized changes in the body.
