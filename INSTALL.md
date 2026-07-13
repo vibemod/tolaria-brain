@@ -20,10 +20,12 @@ It has two parts:
 Open your project folder in Claude Code, Codex, Cursor, Gemini, or OpenCode and paste this prompt. Swap in your repo's clone URL (from the green **Code** button on your new repo):
 
 ```
-I've created my second brain from the tolaria-brain template.
+I've created my second brain from the Tolaria template.
 
-Then read the "Agent part" of INSTALL.md and walk me through setup —
+Then read the INSTALL.md agent part and walk me through setup —
 ask me the questions, give me choices, and don't invent anything about me.
+
+Clone it from: <paste your clone URL here>
 ```
 
 That's it. Your agent takes it from here — it will interview you, personalize the brain, and confirm each step with you before doing anything.
