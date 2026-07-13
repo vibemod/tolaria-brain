@@ -6,6 +6,22 @@ Setup guide for a new **tolaria-brain** second brain. Written to be run by an AI
 
 ---
 
+## Contents
+
+**User part**
+- [Create your repo](#1-get-the-repo)
+- [Answer questions for `SOUL.md`](#2-read-the-rules-then-set-up-soulmd)
+- [Confirm what demo content to remove](#3-clear-the-demo-content)
+- [Try the first run](#5-first-run)
+
+**Agent part**
+- [Clone and connect the repo](#1-get-the-repo)
+- [Rewrite `SOUL.md`](#2-read-the-rules-then-set-up-soulmd)
+- [Remove demo notes](#3-clear-the-demo-content)
+- [Make the first commit](#4-first-commit)
+
+---
+
 ## 1. Get the repo
 
 ### Option A: Start from template
