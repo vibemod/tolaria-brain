@@ -10,7 +10,7 @@ Setup guide for a new **tolaria-brain** second brain. Written to be run by an AI
 
 ### Option A: Start from template
 
-[Create a new repo from this template](https://github.com/new?template_owner=vibemod&template_name=tolaria-brain&name=second-brain&description=My%20Personal%20Second%20Brain), then clone the repo it creates:
+[Create a new repo from this template](https://github.com/new?template_owner=vibemod&visibility=private&template_name=tolaria-brain&name=second-brain&description=My%20Personal%20Second%20Brain), then clone the repo it creates:
 
 ```bash
 git clone git@github.com:<your-username>/second-brain.git
