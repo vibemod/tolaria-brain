@@ -1,5 +1,5 @@
 ---
-name: process-inbox
+name: inbox
 description: Process the tolaria-brain 01-inbox/ — read each captured item and file it into 02-projects/, 03-areas/, 04-ideas/, 50-data/, or 60-archive/ following the rules in AGENTS.md. Use when the user says "process the inbox", "clear my inbox", "sort my notes", "empty the inbox", or "file these".
 ---
 

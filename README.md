@@ -30,7 +30,7 @@ Open this folder in Claude Desktop or Codex and ask it to process the inbox, fin
 
 Reusable workflows live once in `.agents/skills/<name>/SKILL.md` and are shared to every tool via symlink, so Claude Code, Codex, Cursor, and OpenCode all see the same skills:
 
-- **process-inbox** — file everything in `01-inbox/` into the right folder per `AGENTS.md`.
+- **inbox** — file everything in `01-inbox/` into the right folder per `AGENTS.md`.
 - **gtd** — GTD clarify pass: is each capture actionable? Pin down the next action, defer, delegate, or drop it.
 - **grilling** — get interviewed one question at a time to stress-test a plan before you build it ([source](https://github.com/mattpocock/skills)).
 - **grill-me** — user-invoked version of the grilling interview; type it when you want to be grilled on a plan or design.

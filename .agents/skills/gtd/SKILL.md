@@ -5,7 +5,7 @@ description: Run a Getting Things Done (GTD) clarify pass over the tolaria-brain
 
 # GTD clarify pass
 
-Apply David Allen's *Getting Things Done* workflow to the brain. Where `process-inbox` just files things, this pass forces the actionability question and pins down a concrete **next action** for anything that needs one. `AGENTS.md` is the canonical filing rule.
+Apply David Allen's *Getting Things Done* workflow to the brain. Where `inbox` just files things, this pass forces the actionability question and pins down a concrete **next action** for anything that needs one. `AGENTS.md` is the canonical filing rule.
 
 ## The core question
 

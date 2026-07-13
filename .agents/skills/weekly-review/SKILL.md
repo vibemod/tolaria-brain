@@ -9,7 +9,7 @@ A regular sweep to keep the brain trustworthy. Report findings; make changes onl
 
 ## Steps
 
-1. **Inbox** — is `01-inbox/` empty? If not, offer to run `process-inbox`.
+1. **Inbox** — is `01-inbox/` empty? If not, offer to run `inbox`.
 2. **Projects** — for each item in `02-projects/`, check the header (from `02-projects/README.md`):
    - Missing **Goal**, **Deadline**, **Status**, or **Next action**? List it.
    - **Status: stalled** or past deadline? Flag it and suggest either a next action, a new deadline, or archiving.

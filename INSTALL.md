@@ -1,118 +1,103 @@
 # INSTALL.md
 
-Setup guide for a new **tolaria-brain** second brain. Written to be run by an AI agent (Claude, Codex, Cursor, Gemini, OpenCode) — hand it this file and it can walk the whole thing end to end. A human can follow it too.
+Setup guide for a new **tolaria-brain** second brain.
 
-> **Agent:** work through the steps in order. Stop and confirm with the user at each **checkpoint**. Never invent facts about the user — ask, or leave a blank and flag it.
+It has two parts:
 
----
-
-## Contents
-
-**User part**
-- [Create your repo](#1-get-the-repo)
-- [Answer questions for `SOUL.md`](#2-read-the-rules-then-set-up-soulmd)
-- [Confirm what demo content to remove](#3-clear-the-demo-content)
-- [Try the first run](#5-first-run)
-
-**Agent part**
-- [Clone and connect the repo](#1-get-the-repo)
-- [Rewrite `SOUL.md`](#2-read-the-rules-then-set-up-soulmd)
-- [Remove demo notes](#3-clear-the-demo-content)
-- [Make the first commit](#4-first-commit)
+- **[User part](#user-part)** — what you do by hand. Takes a minute.
+- **[Agent part](#agent-part)** — instructions your AI agent reads and runs for you. You don't need to read it.
 
 ---
 
-## 1. Get the repo
+## User part
 
-### Option A: Start from template
+### Create your repo
 
-**User:** [Create a new repo from this template](https://github.com/new?template_owner=vibemod&visibility=private&template_name=tolaria-brain&name=second-brain&description=My%20Personal%20Second%20Brain). Once it's created, copy this to your agent, filling in the clone URL from GitHub's "Code" button:
+[**Create your repo from the template**](https://github.com/new?template_owner=vibemod&visibility=private&template_name=tolaria-brain&name=second-brain&description=My%20Personal%20Second%20Brain) — click the link, then **Create repository**. This copies tolaria-brain into your own GitHub account (private by default).
 
-> I've created my repo from the template. Clone it from: `git@github.com:<your-username>/second-brain.git`
+### Hand it to your agent
 
-**Agent:** clone the URL the user gave you:
+Open your project folder in Claude Code, Codex, Cursor, Gemini, or OpenCode and paste this prompt. Swap in your repo's clone URL (from the green **Code** button on your new repo):
 
-```bash
-git clone git@github.com:<your-username>/second-brain.git
-cd second-brain
+```
+I've created my second brain from the tolaria-brain template.
+
+Then read the "Agent part" of INSTALL.md and walk me through setup —
+ask me the questions, give me choices, and don't invent anything about me.
 ```
 
-### Option B: Start yourself
+That's it. Your agent takes it from here — it will interview you, personalize the brain, and confirm each step with you before doing anything.
 
-**User:** create a new, empty repo on GitHub for your second brain (don't initialize it with a README). Once it's created, copy this to your agent, filling in the repo URL:
-
-> I've created an empty repo for this. Point origin at: `<your-repo-url>`
-
-**Agent:** clone the template repo directly, then point `origin` at the repo URL the user gave you so you're not tracking the template:
-
-```bash
-git clone git@github.com:vibemod/tolaria-brain.git
-cd tolaria-brain
-git remote set-url origin <your-repo-url>
-```
-
-HTTPS instead of SSH:
-
-```bash
-git clone https://github.com/vibemod/tolaria-brain.git
-cd tolaria-brain
-git remote set-url origin <your-repo-url>
-```
-
-**Checkpoint:** confirm you're in the repo root — `ls` should show `AGENTS.md`, `SOUL.md`, `README.md`, and the numbered folders (`01-inbox/` … `60-archive/`).
-
+Clone it from: <paste your clone URL here>
 ---
 
-## 2. Read the rules, then set up `SOUL.md`
+## Agent part
 
-Read `AGENTS.md` (how the agent works) and `SOUL.md` (who the user is). The shipped `SOUL.md` is a **demo persona ("John Snow", epidemiologist)** — it must be replaced with the real user before the brain is useful.
+> **Agent:** you are setting up this user's second brain. Work through the steps in order. Stop at each **checkpoint** and get an explicit yes before continuing. Never invent facts about the user — ask, or leave a blank and flag it. When a step has choices, present them and let the user pick.
 
-Interview the user and rewrite `SOUL.md` in their own words. Keep the existing section headings; fill each from their answers:
+### 1. Clone and enter the repo
+
+Clone the URL the user gave you and `cd` into it:
+
+```bash
+git clone <the-clone-url-the-user-gave-you>
+cd <repo-folder>
+```
+
+**Checkpoint:** confirm you're in the repo root — `ls` should show `AGENTS.md`, `SOUL.md`, `README.md`, and the numbered folders (`01-inbox/` … `60-archive/`). If not, stop and ask the user for the right URL.
+
+### 2. Read the rules
+
+Read `AGENTS.md` (how you operate in this brain) and `SOUL.md` (who the user is). The shipped `SOUL.md` is a **demo persona ("John Snow", epidemiologist)** — you'll replace it in the next step.
+
+### 3. Interview the user, then rewrite `SOUL.md`
+
+Interview the user and rewrite `SOUL.md` in their own words. Ask about each section rather than filling it in yourself. Keep the existing section headings; fill each from their answers:
 
 - **Who I am** — role, field, where based, why they do it.
 - **What I value** — the principles they actually hold.
 - **How I think** — their reasoning style.
-- **My voice** — how they write; used whenever the agent drafts as them.
+- **My voice** — how they write; used whenever you draft as them.
 - **Current goals** — concrete, with absolute dates (`2026-08-31`, never "next month").
 - **Long-term direction** — where they're headed over years.
 - **My daily rhythm** — when they capture and when they process.
 - **Apps & services I use** — their real tools.
-- **Don't** — hard lines the agent must never cross.
+- **Don't** — hard lines you must never cross.
+
+Ask a few questions at a time, not all at once. If the user is unsure about a section, leave it short and note it can grow later.
 
 **Checkpoint:** read the rewritten `SOUL.md` back to the user and get a yes before moving on. This file steers everything downstream.
 
----
-
-## 3. Clear the demo content
+### 4. Clear the demo content
 
 The template ships with example notes. Remove them so the brain starts clean, but **keep every folder's `README.md`** — those document each folder's purpose.
+
+The demo notes to remove:
 
 ```bash
 rm 02-projects/neighborhood-outbreak-mapping-report.md
 rm 02-projects/case-line-list-template.md
 ```
 
-If the user wants either as a starting template, keep it and rename instead.
+**Give the user a choice:** for each demo file, offer to (a) delete it, or (b) keep it as a starting template and rename it to something of theirs. List what will go before touching anything.
 
-**Checkpoint:** confirm with the user before deleting. List what will go; delete only after a yes.
+**Checkpoint:** confirm with the user before deleting. Delete only after a yes, then report what you removed.
 
----
-
-## 4. First commit
+### 5. First commit
 
 ```bash
 git add -A
 git commit -m "Set up brain: personalize SOUL.md, clear demo notes"
-git push        # only if origin points at your own repo
+git push
 ```
 
----
+**Checkpoint:** confirm the push succeeds and points at the user's own repo (not the template).
 
-## 5. First run
+### 6. First run
 
-Open the folder in your agent and try:
+Show the user how the brain works day to day:
 
-- "Read `SOUL.md` and `AGENTS.md`, then tell me back who I am and how you'll work." — confirms context loaded.
-- Drop a note in `01-inbox/` and say **"process the inbox"** — runs the `process-inbox` skill and files it per `AGENTS.md`.
+- Ask them to say **"Read `SOUL.md` and `AGENTS.md`, then tell me back who I am and how you'll work."** — confirms context loaded correctly.
+- Have them drop a note in `01-inbox/` and say **"process the inbox"** — runs the `inbox` skill and files it per `AGENTS.md`.
 
-**Done.** Day to day: capture into `01-inbox/`, process at your own rhythm, commit after each session. `AGENTS.md` is the canonical filing rule; `README.md` explains the structure.
+**Done.** Tell the user the rhythm: capture into `01-inbox/`, process at their own pace, commit after each session. `AGENTS.md` is the canonical filing rule; `README.md` explains the structure.
