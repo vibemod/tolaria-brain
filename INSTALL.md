@@ -10,11 +10,11 @@ Setup guide for a new **tolaria-brain** second brain. Written to be run by an AI
 
 ### Option A: Start from template
 
-[Create a new repo from this template](https://github.com/new?template_owner=vibemod&visibility=private&template_name=tolaria-brain&name=second-brain&description=My%20Personal%20Second%20Brain).
+**User:** [Create a new repo from this template](https://github.com/new?template_owner=vibemod&visibility=private&template_name=tolaria-brain&name=second-brain&description=My%20Personal%20Second%20Brain). Once it's created, copy this to your agent, filling in the clone URL from GitHub's "Code" button:
 
-**Checkpoint:** ask the user to confirm they've created the repo, then ask for their GitHub username (or the full repo URL) to fill in below.
+> I've created my repo from the template. Clone it from: `git@github.com:<your-username>/second-brain.git`
 
-Clone the repo it creates:
+**Agent:** clone the URL the user gave you:
 
 ```bash
 git clone git@github.com:<your-username>/second-brain.git
@@ -23,7 +23,11 @@ cd second-brain
 
 ### Option B: Start yourself
 
-Clone the template repo directly, then point `origin` at your own repo so you're not tracking the template:
+**User:** create a new, empty repo on GitHub for your second brain (don't initialize it with a README). Once it's created, copy this to your agent, filling in the repo URL:
+
+> I've created an empty repo for this. Point origin at: `<your-repo-url>`
+
+**Agent:** clone the template repo directly, then point `origin` at the repo URL the user gave you so you're not tracking the template:
 
 ```bash
 git clone git@github.com:vibemod/tolaria-brain.git
